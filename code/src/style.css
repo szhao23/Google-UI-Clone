@@ -5,8 +5,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 14px;
   color: #555;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 nav {
@@ -14,7 +23,6 @@ nav {
   justify-content: space-between;
   padding: 20px 10px;
   height: 60px;
-  border: 1px solid red;
 }
 
 ul {
@@ -53,8 +61,8 @@ li a:hover {
 }
 
 .menu-button {
-  margin-left: 5px;
-  width: 17px;
+  width: 18px;
+  object-fit: cover;
 }
 
 .profile-pic {
@@ -74,6 +82,11 @@ li a:hover {
   align-items: center;
 }
 
+form {
+  position: relative;
+  margin-top: 25px;
+}
+
 .input-bar {
   width: 500px;
   height: 45px;
@@ -81,4 +94,48 @@ li a:hover {
   font-size: 1.2rem;
   border-radius: 45px;
   border: 1px solid #d3d3d3;
+}
+
+input:hover {
+  box-shadow: 0 1px 3px 1px rgba(201, 201, 201, 0.5);
+}
+
+input:focus {
+  outline: none;
+}
+
+.search {
+  width: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.mic {
+  width: 15px;
+  position: absolute;
+  top: 12px;
+  left: 460px;
+}
+
+.buttons {
+  width: 320px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  border: 1px solid transparent;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+button:hover {
+  border: 1px solid #eee;
+  box-shadow: 0 0 2px 1px rgba(189, 189, 189, 0.5);
+  cursor: pointer;
 }
