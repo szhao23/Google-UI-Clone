@@ -23,6 +23,7 @@ nav {
   justify-content: space-between;
   padding: 20px 10px;
   height: 60px;
+  font-weight: 500;
 }
 
 ul {
@@ -46,7 +47,7 @@ li a:hover {
 
 .small-text {
   /* 90% font size of root font size of HTML/CSS */
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .menu-bg {
@@ -61,7 +62,8 @@ li a:hover {
 }
 
 .menu-button {
-  width: 18px;
+  width: 16px;
+  margin-left: 10px;
   object-fit: cover;
 }
 
@@ -76,7 +78,7 @@ li a:hover {
 }
 
 .search-wrapper {
-  height: 60vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,4 +140,42 @@ button:hover {
   border: 1px solid #eee;
   box-shadow: 0 0 2px 1px rgba(189, 189, 189, 0.5);
   cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.panel {
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.panel > * {
+  flex-basis: 33%;
+}
+
+p {
+  color: grey;
+  padding-left: 13px;
+}
+
+.carbon {
+  text-align: center;
+}
+
+.leaf {
+  width: 12px;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
 }
