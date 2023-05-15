@@ -5,46 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Website Title -->
-    <title>Google Clone</title>
+    <title>Google</title>
     <!-- Import CSS Styling -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="nav">
-        <div class="left">
-          <p>About</p>
-          <p>Store</p>
-        </div>
+    <header>
+      <nav>
+        <!-- Unordered List-->
+        <!-- Left Side -->
+        <ul>
+          <!-- Lists are Children of Children -->
+          <li><a class="small-text" href="#">About</a></li>
+          <li><a class="small-text" href="#">Store</a></li>
+        </ul>
+        <!-- Right Side -->
+        <ul>
+          <li><a href="#">Gmail</a></li>
+          <li><a href="#">Images</a></li>
+          <li class="menu-bg">
+            <img
+              class="menu-button"
+              src="../images/menu.png"
+              alt="menu button"
+            />
+          </li>
+          <li>
+            <img
+              class="profile-pic"
+              src="../images/profile.png"
+              alt="profile pic"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <div class="right">
-          <p>Gmail</p>
-          <p>Images</p>
-          Menu Icon Google Account Icon
+    <div class="search-wrapper">
+      <img class="logo" src="../images/logo.png" alt="logo" />
+      <form>
+        <img class="search" src="../images/search.png" alt="" />
+        <img class="mic" src="../images/mic.png" alt="" />
+        <input
+          class="input-bar"
+          type="text"
+          alt="search-input"
+          title="search-input"
+        />
+        <div class="button">
+          <button type="button">Google Search</button>
+          <button type="button">I'm Feeling Lucky</button>
         </div>
-      </div>
-
-      <div class="header">
-        <h1 class="logo">Google</h1>
-      </div>
-
-      <div class="footer">
-        <div class="left">
-          <p>Advertising</p>
-          <p>Business</p>
-          <p>How Search works</p>
-        </div>
-
-        <div class="middle">
-          <p>Carbon neutral since 2007</p>
-        </div>
-
-        <div class="right">
-          <p>Privacy</p>
-          <p>Terms</p>
-          <p>Settings</p>
-        </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>
